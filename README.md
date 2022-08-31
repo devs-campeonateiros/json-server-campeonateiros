@@ -257,6 +257,7 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 	],
 	"url_image": "https://thumbs.dreamstime.com/z/ilustra%C3%A7%C3%A3o-do-vetor-da-silhueta-bola-voleibol-isolada-no-branco-119929868.jpg"
 }
+```
 
 `Patch /users/id (id do Usuário a ser editado) - FORMATO DA RESPOSTA - STATUS 200`
 
@@ -276,6 +277,8 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 	],
 	"url_image": ""
 }
+```
+
 
 <h2 align ='center'> Deletando o Usuário (token) </h2>
 
