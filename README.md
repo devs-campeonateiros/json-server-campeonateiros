@@ -184,7 +184,8 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
   
 2. o campo "userId": é o ID do usuário que estiver criando o evento, pois somente ele consegue adicionar informações relacionados ao evento.
 
-
-
-
-
+3. o campo "informations": deve receber um objeto com as seguintes informações:
+ - "Inscrição" - valor da inscrição do evento
+ - "Premiações" - quais são as premiações
+ - "Quantidade" - limite de participantes
+ - "Localização" - endereço do evento
