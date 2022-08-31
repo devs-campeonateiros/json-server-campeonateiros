@@ -24,7 +24,6 @@ Nessa aplicação, o usuário sem fazer login ou se cadastrar, consegue visualiz
 
 ```json
 [
-	{
     {
       "email": "danone@email.com",
       "password": "$2a$10$1yak2vwsO2XTyMshwCkpBONT5X3Qr1KsJGWmYd9k6NlwFx9TyVdZy",
