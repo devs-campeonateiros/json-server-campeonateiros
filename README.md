@@ -170,9 +170,6 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 	"localization": "Ginásio Nazareno - Palhoça/sc",
 	"date-start": "30/08/2022",
 	"date-end": "30/08/2022",
-	"image": "",
-	"information": [],
-	"teams": [],
 	"id": 2
 }
 ```
@@ -184,8 +181,104 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
   
 2. o campo "userId": é o ID do usuário que estiver criando o evento, pois somente ele consegue adicionar informações relacionados ao evento.
 
-3. o campo "informations": deve receber um objeto com as seguintes informações:
+<h2 align ='center'> Atualizando o Evento (token) </h2>
+
+`Patch /events/id (id do evento a ser editado) - FORMATO DA REQUISIÇÃO`
+
+```json
+    {
+    		"image": "",
+		"informations": [
+			{
+				"Inscrição": "R$ 100,00",
+				"Premiações": "Troféu e medalha para 1° e 2° lugar",
+				"Quantidade": "Limite de 12 times participantes",
+				"Localização": "Esquina do bar Madalena"
+			}
+		],
+		"teams": [
+			"Danone FC",
+			"Gueto FC",
+			"Galaticos"
+			]
+		}
+```
+
+`Patch /events - FORMATO DA RESPOSTA - STATUS 200`
+
+```json
+{
+	"category": "Futebol",
+	"userId": 3,
+	"name": "Copa doss cria",
+	"localization": "Morro do alemão",
+	"date-start": "03/09/2022",
+	"date-end": "03/09/2022",
+	"id": 2,
+	"informations": [
+		{
+			"Inscrição": "R$ 100,00",
+			"Premiações": "Troféu e medalha para 1° e 2° lugar",
+			"Quantidade": "Limite de 12 times participantes",
+			"Localização": "Esquina do bar Madalena"
+		}
+	],
+	"teams": [
+		"Danone FC",
+		"Gueto FC",
+		"Galaticos"
+	]
+}
+```
+
+1. O campo "informations": deve receber um objeto com as seguintes informações:
  - "Inscrição" - valor da inscrição do evento
  - "Premiações" - quais são as premiações
  - "Quantidade" - limite de participantes
  - "Localização" - endereço do evento
+
+2. O campo "teams" - recebe um array dos times que estão participando do evento!
+
+<h2 align ='center'> Deletando o Evento (token) </h2>
+
+`Delete /events/id (id do evento a ser editado) - Não é necessário passar corpo na requisição!`
+
+<h2 align ='center'> Atualizando o usuário (token) </h2>
+
+`Patch /users/id (id do Usuário a ser editado) - FORMATO DA REQUISIÇÃO`
+
+```json
+{
+	"players": [
+		"Zezin",
+		"Anão",
+		"Canhotin",
+		"Vissoto"
+	],
+	"url_image": "https://thumbs.dreamstime.com/z/ilustra%C3%A7%C3%A3o-do-vetor-da-silhueta-bola-voleibol-isolada-no-branco-119929868.jpg"
+}
+
+`Patch /users/id (id do Usuário a ser editado) - FORMATO DA RESPOSTA - STATUS 200`
+
+```json
+
+{
+	"email": "canela@mail.com",
+	"password": "$2a$10$l7lutElDxqAexWlpmo.OjeiI26h2fILW8rrGlW0B18YY3Xa3BjBVa",
+	"name": "Só canela FC",
+	"city": "São Paulo",
+	"id": 3,
+	"players": [
+		"Zezin",
+		"Anão",
+		"Canhotin",
+		"Vissoto"
+	],
+	"url_image": ""
+}
+
+<h2 align ='center'> Deletando o Usuário (token) </h2>
+
+`Delete /users/id (id do Usuário a ser editado) - Não é necessário passar corpo na requisição!`
+
+<h1>Escrito e criado por - team campeonateiros!! </h1>
