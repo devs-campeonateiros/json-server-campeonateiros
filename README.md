@@ -25,21 +25,24 @@ Nessa aplicação, o usuário sem fazer login ou se cadastrar, consegue visualiz
 ```json
 [
 	{
-		"email": "higor@kenzie.com",
-		"password": "$2a$10$1yak2vwsO2XTyMshwCkpBONT5X3Qr1KsJGWmYd9k6NlwFx9TyVdZy",
-		"name": "Higor",
-		"city": "Palhoça",
-		"players": [],
-		"url_image": "",
-		"id": 1
-	},
-	{
-		"email": "danone@email.com",
-		"password": "$2a$10$zzhZ/afEpBKu7ZXRAsWsc.6bloaUUKFGlG8dHLafsD6/GfHKL2UN.",
-		"name": "Danone FC",
-		"city": "Palhoça",
-		"id": 2
-	}
+    {
+      "email": "danone@email.com",
+      "password": "$2a$10$1yak2vwsO2XTyMshwCkpBONT5X3Qr1KsJGWmYd9k6NlwFx9TyVdZy",
+      "name": "Danone FC",
+      "city": "Palhoça",
+      "players": ["Cristiano", "Ronaldo", "Messi", "Neymar"],
+      "url_image": "https://i.pinimg.com/564x/a2/df/be/a2dfbe8df09c969ec925b8cf1fa6ab47.jpg",
+      "id": 1
+    },
+    {
+      "email": "kenzieclub@kenzie.com",
+      "password": "$2a$10$1yak2vwsO2XTyMshwCkpBONT5X3Qr1KsJGWmYd9k6NlwFx9TyVdZy",
+      "name": "Danone FC",
+      "city": "Palhoça",
+      "players": ["Tsunode", "Wesley", "4lysson", "Vilson"],
+      "url_image": "https://veja.abril.com.br/wp-content/uploads/2019/12/1.jpg",
+      "id": 2
+    }
 ]
 ```
 
@@ -55,7 +58,18 @@ Nessa aplicação, o usuário sem fazer login ou se cadastrar, consegue visualiz
 		"date-start": "30/08/2022",
 		"date-end": "30/08/2022",
 		"image": "",
-		"information": [],
+		"informations": [
+			{
+				"Inscrição": "R$ 300,00",
+				"Premiações": "Troféu e medalha para os campeões",
+				"Quantidade": "Limite de 8 times participantes",
+				"Localização": "Camp Now KenzieClub"
+			}
+		],
+		"teams": [
+			"Danone FC",
+			"Kenzie FC"
+		],
 		"id": 1
 	}
 ]
@@ -106,12 +120,19 @@ Caso de tudo certo, a resposta será assim:
 
 ```json
 {
-	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbm9uZUBlbWFpbC5jb20iLCJpYXQiOjE2NjE5MDA5NTUsImV4cCI6MTY2MTkwNDU1NSwic3ViIjoiMiJ9.bPm1D8tTUIrIckvrh1sVDgfTEykCObqoW13WFFgYbvg",
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbm9uZUBlbWFpbC5jb20iLCJpYXQiOjE2NjE5MDY0NTEsImV4cCI6MTY2MTkxMDA1MSwic3ViIjoiMSJ9.xH2G55cvVVoIf6oKF10bgG-vmuUyBfBfNeYQebxtnT0",
 	"user": {
 		"email": "danone@email.com",
 		"name": "Danone FC",
 		"city": "Palhoça",
-		"id": 2
+		"players": [
+			"Cristiano",
+			"Ronaldo",
+			"Messi",
+			"Neymar"
+		],
+		"url_image": "https://i.pinimg.com/564x/a2/df/be/a2dfbe8df09c969ec925b8cf1fa6ab47.jpg",
+		"id": 1
 	}
 }
 ```
@@ -136,8 +157,6 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
   "localization": "Ginásio Nazareno - Palhoça/sc",
   "date-start": "30/08/2022",
   "date-end": "30/08/2022",
-  "image": "",
-  "information": []
 }
 ```
 
@@ -153,6 +172,7 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 	"date-end": "30/08/2022",
 	"image": "",
 	"information": [],
+	"teams": [],
 	"id": 2
 }
 ```
