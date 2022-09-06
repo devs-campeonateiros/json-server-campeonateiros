@@ -201,6 +201,7 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 ```
 
 1. O campo - "teams" serão os times inscritos no evento. Sendo que será um array de objetos com as seguintes inf. de cada time inscrito :
+	- "name": nome do time participante;
 	- "city": cidade/estado do time inscrito;
 	- "url_image": logo do time inscrito;
 	- "userId: id do time inscrito.
