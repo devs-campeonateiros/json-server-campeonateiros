@@ -10,7 +10,7 @@ Este é o backend da aplicação League of Campeonateiros - um banco de dados de
   <a href="#endpoints">Endpoints</a>
 </p>
 
-A API tem um total de XX endpoints, sendo em volta principalmente do usuário(time ou organizador), podendo realizar o cadastro do seu perfil, times e eventos que esta organizando ou gostaria de participar.
+A API tem um total de 9 endpoints, sendo em volta principalmente do usuário(time ou organizador), podendo realizar o cadastro do seu perfil, times e eventos que esta organizando ou gostaria de participar.
 
 O URL base da API é  https://database-campeonateiros.herokuapp.com/
 
@@ -86,7 +86,6 @@ Nessa aplicação, o usuário sem fazer login ou se cadastrar, consegue visualiz
 ```
 
 <h2 align ='center'> Criação de usuário </h2>
-### Cadastro
 
 `POST /register - FORMATO DA REQUISIÇÃO`
 
