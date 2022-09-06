@@ -222,6 +222,7 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 	"address": "Camp Now KenzieClub",
 	"teams": [
 		{
+			"name": "Danone FC",
 			"city": "Palhoça",
 			"url_image": "https://thumbs.dreamstime.com/z/ilustra%C3%A7%C3%A3o-do-vetor-da-silhueta-bola-voleibol-isolada-no-branco-119929868.jpg",
 			"UserId": 2
