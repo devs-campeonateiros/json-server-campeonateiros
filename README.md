@@ -29,7 +29,7 @@ Nessa aplicação, o usuário sem fazer login ou se cadastrar, consegue visualiz
       "password": "$2a$10$1yak2vwsO2XTyMshwCkpBONT5X3Qr1KsJGWmYd9k6NlwFx9TyVdZy",
       "name": "Danone FC",
       "city": "Palhoça",
-      "players": ["Cristiano", "Ronaldo", "Messi", "Neymar"],
+      "players": "Cristiano, Ronaldo, Messi, Neymar",
       "url_image": "https://i.pinimg.com/564x/a2/df/be/a2dfbe8df09c969ec925b8cf1fa6ab47.jpg",
       "id": 1
     },
@@ -38,7 +38,7 @@ Nessa aplicação, o usuário sem fazer login ou se cadastrar, consegue visualiz
       "password": "$2a$10$1yak2vwsO2XTyMshwCkpBONT5X3Qr1KsJGWmYd9k6NlwFx9TyVdZy",
       "name": "Danone FC",
       "city": "Palhoça",
-      "players": ["Tsunode", "Wesley", "4lysson", "Vilson"],
+      "players": "Tsunode, Wesley, 4lysson, Vilson",
       "url_image": "https://veja.abril.com.br/wp-content/uploads/2019/12/1.jpg",
       "id": 2
     }
@@ -134,12 +134,7 @@ Caso de tudo certo, a resposta será assim:
 		"email": "danone@email.com",
 		"name": "Danone FC",
 		"city": "Palhoça/SC",
-		"players": [
-			"Cristiano",
-			"Ronaldo",
-			"Messi",
-			"Neymar"
-		],
+		"players": "Cristiano, Ronaldo, Messi, Neymar",
 		"url_image": "https://i.pinimg.com/564x/a2/df/be/a2dfbe8df09c969ec925b8cf1fa6ab47.jpg",
 		"id": 1
 	}
@@ -257,12 +252,7 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 
 ```json
 {
-	"players": [
-		"Zezin",
-		"Anão",
-		"Canhotin",
-		"Vissoto"
-	],
+	"players": "Carlin, Zezin, Robertin, Cleitin"
 	"url_image": "https://thumbs.dreamstime.com/z/ilustra%C3%A7%C3%A3o-do-vetor-da-silhueta-bola-voleibol-isolada-no-branco-119929868.jpg"
 }
 ```
@@ -277,13 +267,8 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 	"name": "Só canela FC",
 	"city": "São Paulo",
 	"id": 3,
-	"players": [
-		"Zezin",
-		"Anão",
-		"Canhotin",
-		"Vissoto"
-	],
-	"url_image": ""
+	"players": "Carlin, Zezin, Robertin, Cleitin",
+	"url_image": "https://thumbs.dreamstime.com/z/ilustra%C3%A7%C3%A3o-do-vetor-da-silhueta-bola-voleibol-isolada-no-branco-119929868.jpg"
 }
 ```
 
