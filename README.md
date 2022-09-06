@@ -50,7 +50,7 @@ Nessa aplicação, o usuário sem fazer login ou se cadastrar, consegue visualiz
 ```json
 [
 	{
-		"category": "FUTEBOL",
+		"category": "Futebol",
 		"userId": 2,
 		"name": "Torneio da Galera",
 		"localization": "Ginásio Nazareno - Palhoça/SC",
@@ -155,7 +155,7 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 
 ```json
 {
-  "category": "FUTEBOL",
+  "category": "Futebol",
   "userId": 2,
   "name": "Torneio da Galera",
   "localization": "Ginásio Nazareno - Palhoça/sc",
@@ -168,7 +168,7 @@ Rotas que necessitam de autorização(token) deve ser informado no cabeçalho da
 
 ```json
 {
-	"category": "FUTEBOL",
+	"category": "Futebol",
 	"userId": 2,
 	"name": "Torneio da Galera",
 	"localization": "Ginásio Nazareno - Palhoça/sc",
